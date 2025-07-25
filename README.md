@@ -1,11 +1,11 @@
-# 🧰 Packer Build Repository
+#  Packer Build Repository
 
 This repository contains Packer templates and configuration files to automate the creation of machine images across various platforms.
 
-## 📦 Features
+## Features
 
 - Automated image builds with [Packer](https://www.packer.io/)
-- Modular, reusable JSON or HCL templates
+- Modular, reusable HCL templates
 - Support for:
   - VMware vSphere / ESXi
   - AWS AMIs (on going)
