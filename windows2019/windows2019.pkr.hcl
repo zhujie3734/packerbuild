@@ -19,6 +19,7 @@ source "vsphere-iso" "win2019" {
   datastore = var.vcenter_datastore
   folder = var.vm_folder
   convert_to_template = var.enable_convert_template
+  tools_upgrade_policy = var.vmtools_upgrade
   
 
   http_ip = var.http_ip
@@ -61,7 +62,6 @@ source "vsphere-iso" "win2019" {
   winrm_password = var.os_password
   winrm_port = var.remote_port
   winrm_insecure = var.winrm_insecure
-  #ssh_clear_authorized_keys = true
 
   shutdown_command = var.shutdown_command
   shutdown_timeout = var.shutdown_timeout

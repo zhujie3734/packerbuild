@@ -27,7 +27,7 @@
             </AutoLogon>
             <UserAccounts>
                 <AdministratorPassword>
-                    <Value>$STlon3100</Value>
+                    <Value>XXXXXX</Value>
                     <PlainText>true</PlainText>
                 </AdministratorPassword>
             </UserAccounts>
