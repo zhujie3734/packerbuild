@@ -38,7 +38,7 @@ storage = {
 }
 
 iso_urls     = ["http://172.16.1.1:8000/SERVER_2022_x64.ISO"]
-iso_checksum = "sha256:e80947cea3be3e2063db822e24c90a43402b37d1d9a6a744b891ad21fbf44acb"
+iso_checksum = "sha256:3e4fa6d8507b554856fc9ca6079cc402df11a8b79344871669f0251535255325"
 iso_path     = ["[] /vmimages/tools-isoimages/windows.iso"]
 cdrom_type   = "sata"
 cd_files = [
