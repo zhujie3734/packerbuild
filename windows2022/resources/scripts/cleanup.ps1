@@ -20,4 +20,14 @@ Function Cleanup {
     Import-Module Appx -UseWinPS
     Get-AppxPackage *edge* | Where-object {$_.name -like "*Game*"} | Remove-AppxPackage
 }
+
+Function adjust_mtu {
+    $interfaces = Get-NetAdapter | Where-Object { $_.Status -eq "Up" }
+
+    foreach ($iface in $interfaces) {
+        Write-Host "Setting MTU for adapter $($iface.Name)"
+        Set-NetIPInterface -InterfaceAlias $iface.Name -NlMtuBytes 1390 -PassThru
+    }
+}
 Cleanup
+adjust_mtu
